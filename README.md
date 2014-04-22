@@ -51,6 +51,9 @@ md.api.getAppBaseFrame({
 
 2.  如果希望呈现效果更好，建议加上 right 容器名称
 
+例图：
+
+![主框架](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/ui.png)
 
 ##公共组件
 
@@ -71,6 +74,10 @@ md.system.alert({
 *  *type*	取值1、2、3（ 1成功提示；2 错误提示；3 警告提示）
 *  *timeout*	定时关闭提示层（默认为0，不自动关闭）
 *  *callback*	提示层关闭后的回调函数
+
+例图：
+
+![提示弹层](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/alert.png)
 
 ###md.system.pager  分页插件
 
@@ -96,6 +103,9 @@ md.system.pager({
 *  *align*	对齐方式（left、right、center）
 *  *changePage*	点击页码时的回调函数 返回当前页码
 
+例图：
+
+![分页](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/pager.png)
 
 ###md.system.select   下拉框插件
 
@@ -139,6 +149,9 @@ md.system.select({
 *  *positionDiretion*	top、bottom 下拉框呈现的位置
 *  *onChange*	function (value, text) { }回调函数，value选择项的值，text选择项的文本
 
+例图：
+
+![下拉框](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/select.png)
 
 ###md.system.dialog  弹层插件
 
@@ -174,6 +187,9 @@ md.system.dialog({
 *  *autoClose*	Number设置弹出层自动关闭，单位为ms，传参时无需带单位
 *  *callback*	设置关闭弹出层后执行的回调函数
 
+例图：
+
+![弹层](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/dialog.png)
 
 
 ###md.system.tip  hover提示浮层
@@ -197,7 +213,9 @@ md.system.tip({
 
 更多参数说明请参考 http://vadikom.com/demos/poshytip/
 
+例图：
 
+![提示浮层](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/tip.png)
   
 
 
