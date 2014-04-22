@@ -156,7 +156,24 @@ md.system.dialog({
     }
 });
 ```
-更多参数说明请参考  http://www.lanrentuku.com/down/js/qita-862/
+参数说明：
+*  *container*   	弹层内容
+
+        内容模板的参数：
+        header  弹出层的标题，并包含了关闭按钮，如果没有参数将不显示。
+        content 弹出层的内容，可以是HTML
+        yesFn   确定按钮的回调函数
+        noFn    取消按钮的回调函数
+        yesText 确定按钮的文本，默认为“确定”。
+        noText  取消按钮的文本，默认为“取消”。
+
+*  *drag*	Boolean 是否支持拖拽
+*  *fixed*	Boolean true：固定定位 false:绝对定位
+*  *overlay*	Boolean 是否有遮罩层
+*  *lock*		Boolean  true：ESC键不关闭弹层 false：ESC键关闭弹出层
+*  *autoClose*	Number设置弹出层自动关闭，单位为ms，传参时无需带单位
+*  *callback*	设置关闭弹出层后执行的回调函数
+
 
 
 ###md.system.tip  hover提示浮层
