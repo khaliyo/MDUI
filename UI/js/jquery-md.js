@@ -40,6 +40,9 @@ md.system.select = function (settings) {
 md.system.dialog = function (settings) {
     easyDialog.open(settings);
 };
+md.system.closeDialog=function(){
+    easyDialog.close();
+};
 
 /*tip教导层*/
 md.system.tip = function (settings) {

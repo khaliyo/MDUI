@@ -168,6 +168,10 @@ md.system.dialog({
         noFn: true
     }
 });
+
+//关闭弹层
+md.system.closeDialog();
+
 ```
 参数说明：
 *  *container*   	弹层内容
