@@ -1884,7 +1884,7 @@ md.api = new Object();
 md.api.options = {
     host: "http://www.mingdao.com/",
     apiUrl: "https://api.mingdao.com/",
-    fileRoot: "https://cdnfile.mingdao.com/",
+    fileRoot: "https://cdnfile.mingdao.com/", //"/UI/"
     user: new Object,
     project: new Object,
     applications: new Object,
