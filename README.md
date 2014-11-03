@@ -51,6 +51,9 @@ md.api.getAppBaseFrame({
 
 2.  如果希望呈现效果更好，建议加上 right 容器名称
 
+例图：
+
+![主框架](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/ui.png)
 
 ##公共组件
 
@@ -71,6 +74,10 @@ md.system.alert({
 *  *type*	取值1、2、3（ 1成功提示；2 错误提示；3 警告提示）
 *  *timeout*	定时关闭提示层（默认为0，不自动关闭）
 *  *callback*	提示层关闭后的回调函数
+
+例图：
+
+![提示弹层](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/alert.png)
 
 ###md.system.pager  分页插件
 
@@ -96,6 +103,9 @@ md.system.pager({
 *  *align*	对齐方式（left、right、center）
 *  *changePage*	点击页码时的回调函数 返回当前页码
 
+例图：
+
+![分页](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/pager.png)
 
 ###md.system.select   下拉框插件
 
@@ -139,6 +149,9 @@ md.system.select({
 *  *positionDiretion*	top、bottom 下拉框呈现的位置
 *  *onChange*	function (value, text) { }回调函数，value选择项的值，text选择项的文本
 
+例图：
+
+![下拉框](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/select.png)
 
 ###md.system.dialog  弹层插件
 
@@ -155,25 +168,32 @@ md.system.dialog({
         noFn: true
     }
 });
+
+//关闭弹层
+md.system.closeDialog();
+
 ```
 参数说明：
 *  *container*   	弹层内容
 
         内容模板的参数：
-        header  弹出层的标题，并包含了关闭按钮，如果没有参数将不显示。
+        header  弹出层的标题，并包含了关闭按钮，如果没有参数将不显示
         content 弹出层的内容，可以是HTML
         yesFn   确定按钮的回调函数
         noFn    取消按钮的回调函数
-        yesText 确定按钮的文本，默认为“确定”。
-        noText  取消按钮的文本，默认为“取消”。
+        yesText 确定按钮的文本，默认为“确定”
+        noText  取消按钮的文本，默认为“取消”
 
 *  *drag*	Boolean 是否支持拖拽
-*  *fixed*	Boolean true：固定定位 false:绝对定位
+*  *fixed*	Boolean true：固定定位  false:绝对定位
 *  *overlay*	Boolean 是否有遮罩层
-*  *lock*		Boolean  true：ESC键不关闭弹层 false：ESC键关闭弹出层
+*  *lock*		Boolean  true：ESC键不关闭弹层  false：ESC键关闭弹出层
 *  *autoClose*	Number设置弹出层自动关闭，单位为ms，传参时无需带单位
 *  *callback*	设置关闭弹出层后执行的回调函数
 
+例图：
+
+![弹层](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/dialog.png)
 
 
 ###md.system.tip  hover提示浮层
@@ -192,12 +212,57 @@ md.system.tip({
 参数说明：
 
 *  *elementID*   	作用到的元素
-*  *arrowLeft*	三角图标距离左边距离（px）
-*  *arrowRight*	三角图标距离右边距离（px）
+*  *showOn* 
 
-更多参数说明请参考 http://vadikom.com/demos/poshytip/
+        取值： 
+        hover 默认，鼠标悬浮 
+        focus 输入表单聚焦时
 
+*  *showTimeout* 指定时间之后显示，单位为ms
+*  *hideTimeout* 指定时间之后隐藏，单位为ms
+*  *arrowLeft*	Number 三角图标距离左边距离
+*  *arrowRight*	Number 三角图标距离右边距离
+*  *alignTo* 
 
+        取值：
+        cursor：相对于鼠标位置
+        target：相对于作用的元素
+        
+*  *alignX* 
+
+        取值：
+        'right', 'center', 'left', 'inner-left', 'inner-right'
+        水平方向相对于鼠标光标（alignTo:cursor）或者目标元素（alignTo:target）的位置
+
+*  *alignY* 
+
+        取值：
+        'bottom', 'center', 'top', 'inner-bottom', 'inner-top'
+        垂直方向相对于鼠标光标（alignTo:cursor）或者目标元素（alignTo:target）的位置
+
+*  *offsetX* Number 整个元素偏移水平方向的距离
+*  *offsetY* Number 整个元素偏移垂直方向的距离
+*  *allowTipHover*  Boolean 鼠标悬停上面是否隐藏
+*  *fade*  Boolean  淡入淡出的效果
+*  *slide* Boolean 滑动的效果
+*  *showAniDuration* Number 单位ms，显示动画执行的时间
+*  *hideAniDuration* Number 单位ms，隐藏示动画执行的时间
+*  *content*
+
+        设置值的方式：
+        '[title]' 默认去当前元素的title属性值
+        'string' 任意字符串，可以含html
+        'function' 以函数的方式执行AJAX请求返回数据
+        如：function(updateCallback){
+            $.getJSON(url,function(data) {
+                updateCallback(data);
+            }
+            return '数据加载中...';
+        }
+
+例图：
+
+![提示浮层](https://raw.githubusercontent.com/meihua-info/MDUI/master/UI/%E6%95%88%E6%9E%9C%E5%9B%BE/tip.png)
   
 
 
