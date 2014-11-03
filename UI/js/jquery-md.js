@@ -2102,9 +2102,8 @@ md.api.getLeft = function (container) {
     html.Append('<div class="menuItemLine"><div class="lineLeft"></div><div class="lineRight"></div><div class="mdClear"></div></div>');
     html.Append('<div class="menuItem_Content menuItem_ContentList">');
     html.Append('<ul class="navUL">');
-    html.Append('<li class="navItem"><i class="mdFont16 mdThemeColor4 icon-doc"></i><a href="' + md.api.options.host + 'documents/">文档中心</a></li>');
-    html.Append('<li class="navItem"><i class="mdFont16 mdThemeColor4 icon-pic"></i><a href="' + md.api.options.host + 'pictures/">图片中心</a></li>');
-    html.Append('<li class="navItem"><i class="mdFont16 mdThemeColor4 icon-qa"></i><a href="' + md.api.options.host + 'qas/">文档中心</a></li>');
+    html.Append('<li class="navItem"><i class="mdFont16 mdThemeColor4 icon-kc"></i><a href="' + md.api.options.host + 'knowledge/">知识中心</a></li>');
+    html.Append('<li class="navItem"><i class="mdFont16 mdThemeColor4 icon-qa"></i><a href="' + md.api.options.host + 'qas/">问答中心</a></li>');
     html.Append('<li class="navItem"><i class="mdFont16 mdThemeColor4 icon-votenobg"></i><a href="' + md.api.options.host + 'vote/">投票中心</a></li>');
     html.Append('</ul>');
     html.Append('</div>');
@@ -2212,7 +2211,7 @@ md.api.getFooter = function (container) {
     html.Append('<span><a href="http://www.mingdao.com/deployment_partners.htm" target="_blank">加盟代理</a></span>');
     html.Append('<span><a href="http://open.mingdao.com" target="_blank">开放平台</a></span>');
     html.Append('<span><a href="http://www.mingdao.com/about.htm" target="_blank">关于我们</a></span>');
-    html.Append('<span><a href="http://help.mingdao.com" target="_blank">使用帮助</a></span>');
+    html.Append('<span><a href="http://support.mingdao.com" target="_blank">使用帮助</a></span>');
     html.Append('<span><a href="http://www.mingdao.com/contact.htm" target="_blank">联系我们</a></span>');
     html.Append('</div>');
     html.Append('<div class="mdRight rightNav">');
