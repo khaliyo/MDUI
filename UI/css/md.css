@@ -43,7 +43,7 @@
 #mdHeadContainer { width:1000px; margin:0px auto;}
 #mdHead {border-bottom:none;_zoom:1;padding-left:25px;padding-right:5px;padding-top:75px; margin-bottom:30px;}
 #mdHead .head_Logo {float:left;padding-left:7px;padding-right:7px;overflow:hidden;}
-#mdHead .head_Logo .logoImg{ text-align:center}
+#mdHead .head_Logo .logoImg img{max-height: 65px;max-width: 350px;overflow: hidden;border: 0;}
 #mdHead .head_CompanyTitle {margin-top:15px;text-align:center; float:left}
 #mdHead .head_CompanyTitle .txtCompanyName{ float:left; padding:2px 5px; border:1px solid white; font-size:14px;}
 
